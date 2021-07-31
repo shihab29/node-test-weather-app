@@ -24,6 +24,6 @@ weatherForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const { value } = locationEl;
-  const url = `http://localhost:3000/weather?address=${value}`;
+  const url = `/weather?address=${value}`;
   getData(url);
 });
